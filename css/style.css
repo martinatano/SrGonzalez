@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'GothamBold';
+    src: url('../fonts/Gotham-Bold\ .otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/Gotham-Book\ .otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #111;
+}
+
+.navbar {
+    background-color: #1a1a18;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 400px 40px;
+    border-bottom: 1px solid #444;
+}
+
+.navbar img.logo {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.nav-links .separator {
+    color: #999;
+    font-size: 18px;
+}
+
+.nav-logo-right {
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.navbar-bottom-bar {
+    height: 5px;
+    background: linear-gradient(to right, yellow 10%, blue 10% 20%, red 20% 30%);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.highlight-section {
+    background: repeating-linear-gradient(45deg,
+            #f2f5f1,
+            #f2f5f1 20px,
+            #ffffff 20px,
+            #ffffff 40px);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.highlight-section h2 {
+    font-size: 22px;
+    font-family: GothamBook;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.highlight-line-1,
+.highlight-line-2 {
+    display: inline-block;
+    padding: 0px 5px;
+    margin-top: 2px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.highlight-line-1 {
+    background-color: #095226;
+    color: #efe936;
+
+}
+
+.highlight-line-2 {
+    background-color: #095226;
+    color: #efe936;
+}
+
+.gotham-bold {
+    font-family: 'GothamBold', sans-serif;
+    font-weight: bold;
+}
+
+.gotham-book {
+    font-family: 'GothamBook', sans-serif;
+    font-weight: normal;
+}
+
+.highlight-section p {
+    max-width: 700px;
+    margin: 10px auto 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.highlight-section p strong {
+    font-weight: bold;
+}
+
+.stats-section {
+    background-color: #111;
+    /* Fondo oscuro */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre los elementos */
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: GothamBold;
+}
+
+.stat-item span {
+    font-size: 16px;
+    color: #ccc;
+    font-family: GothamBook;
+}
+
+.stat-separator {
+    color: #666;
+    font-size: 24px;
+}
+
+.carousel-inner-2 img {
+    max-width: 80%;
+    /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: 600px;
+    /* Ajusta la altura deseada */
+    object-fit: cover;
+    /* Recorta la imagen para que se ajuste al contenedor */
+    display: block;
+    margin: 0 auto;
+    /* Centra las imágenes horizontalmente */
+}
+
+.branches-section {
+    background-color: #f9f9f9;
+    /* Fondo claro */
+    padding: 46px 20px;
+    text-align: center;
+}
+
+.branches-title {
+    color: #095226;
+    /* Verde oscuro */
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.branches-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.branch-item {
+    text-align: center;
+    max-width: 250px;
+}
+
+.branch-item img {
+    width: 60px;
+    /* Tamaño del ícono */
+    margin-bottom: 15px;
+}
+
+.branch-item h3 {
+    font-size: 18px;
+    color: #095226;
+    /* Verde oscuro */
+    margin-bottom: 10px;
+}
+
+.branch-item p {
+    font-size: 14px;
+    color: #333;
+    /* Texto oscuro */
+}
+
+.branch-item svg {
+    width: 40px;
+    /* Ajusta el tamaño del ícono */
+    height: 40px;
+    /* Ajusta la altura del ícono */
+    stroke: #095226;
+    /* Cambia el color del ícono a verde oscuro */
+    margin-bottom: 10px;
+    /* Espacio entre el ícono y el texto */
+}
+
+/* logos */
+.carousel-row {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: #fff;
+    padding: 100px 0;
+}
+
+.carousel-track {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+    height: 50px;
+    margin: 30px 30px;
+    vertical-align: middle;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.footer-branch i,
+.social-icons i {
+    color: #ffde59;
+    /* amarillo tipo neón */
+}
+
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center; /* Alinea verticalmente el texto y el ícono */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row; /* Cambia la dirección a fila */
+    position: relative;
+    top: 50px; /* Hace que suba sobre el footer */
+    background-color: #25D366; /* Verde de WhatsApp */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 30px; /* Ajusta el espaciado interno */
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    text-align: center;
+    max-width: 350px;
+    gap: 10px; /* Espacio entre el texto y el ícono */
+}
+
+.whatsapp-btn i {
+    font-size: 25px; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+    padding : 5px;
+}
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 20px 30px;
+}
+
+.footer-container {
+    display: flex; /* Activa el diseño en fila */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    padding: 20px;
+    background-color: #111; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+}
+
+.footer-logo,
+.footer-branch {
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    max-width: 300px; /* Ancho máximo para cada columna */
+    margin: 10px; /* Espaciado entre columnas */
+}
+
+.footer-logo img {
+    max-width: 100%; /* Asegura que el logo no exceda el contenedor */
+    margin-bottom: 10px;
+}
+
+.footer-branch h4 {
+    font-size: 15px;
+    font-family: GothamBold;
+    margin-bottom: 10px;
+    color: white
+}
+
+.footer-branch p {
+    font-size: 12px;
+    margin: 5px 0;
+    font-family: GothamBook;
+}
+
+.social-icons a {
+    color: white; /* Color blanco para los íconos */
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #efe936; /* Cambia a amarillo al pasar el mouse */
+}
