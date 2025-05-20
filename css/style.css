@@ -18,12 +18,15 @@ body {
     background-color: #111;
 }
 
+.navbar-wrapper {
+    background-color: #1a1a18; /* Fondo oscuro */
+    width: 100%; /* Cubre todo el ancho */
+}
 .navbar {
-    background-color: #1a1a18;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 400px 40px;
+    padding: 20px 40px;
     border-bottom: 1px solid #444;
 }
 
