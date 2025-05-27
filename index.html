@@ -14,24 +14,32 @@
 </head>
 
 <body>
-    <div class="navbar-wrapper">
+  <div class="navbar-wrapper">
     <div class="navbar">
-        <!-- Logo izquierdo -->
-       <a href="./index.html"> <img src="./images/Web 01_señor gonzalez.png" alt="Logo Señor Gonzalez" class="logo"></a>
+      <!-- Logo izquierdo -->
+      <a href="./index.html">
+        <img src="./images/Web 01_señor gonzalez.png" alt="Logo Señor Gonzalez" class="logo">
+      </a>
 
-        <!-- Enlaces con separadores -->
-        <div class="nav-links">
-            <a href="#sucursales">Sucursales</a>
-            <span class="separator">|</span>
-            <a href="#marcas">Marcas</a>
-            <span class="separator">|</span>
-            <a href="#contacto">Contacto</a>
-            <span class="separator">|</span>
-            <!-- Logo derecho -->
-           <a href="http://www.petone.com.ar/"><img src="./images/Web 01_pet one.png" alt="Pet One" class="nav-logo-right"></a> 
-        </div>
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <!-- Enlaces -->
+      <div class="nav-links" id="navLinks">
+        <a href="#sucursales">Sucursales</a>
+        <span class="separator">|</span>
+        <a href="#marcas">Marcas</a>
+        <span class="separator">|</span>
+        <a href="#contacto">Contacto</a>
+        <span class="separator">|</span>
+        <a href="http://www.petone.com.ar/">
+          <img src="./images/Web 01_pet one.png" alt="Pet One" class="nav-logo-right">
+        </a>
+      </div>
     </div>
-    </div>
+  </div>
+  
+  
     <!--carrusel-->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
         <div class="carousel-inner">
@@ -159,10 +167,10 @@
       </div>
     </section>
 
-    <a href="https://wa.me/541132084977" id="contacto"  class="whatsapp-btn" target="_blank">
-        <strong>Contactanos<br>por WhatsApp</strong>
-        <i class="bi bi-whatsapp"></i>
-      </a>
+    <a href="https://wa.me/5491132084977" id="contacto" class="whatsapp-btn" target="_blank">
+      <strong>Contactanos<br>por WhatsApp</strong>
+      <i class="bi bi-whatsapp"></i>
+  </a>
       
       
     <footer class="footer">
@@ -201,9 +209,11 @@
       </footer>
     
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"></script>
+  
+  <script src="script.js"></script>
 
+</body>
 </html>

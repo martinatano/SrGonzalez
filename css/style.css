@@ -18,51 +18,68 @@ body {
     background-color: #111;
 }
 
+/* Navbar general */
 .navbar-wrapper {
-    background-color: #1a1a18; /* Fondo oscuro */
-    width: 100%; /* Cubre todo el ancho */
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    border-bottom: 1px solid #444;
+    width: 100vw;
+    background-color: #111;
 }
 
-.navbar img.logo {
-    height: 40px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
+    color: white;
 }
 
 .nav-links a {
     color: white;
+    /* Cambia el color del texto a blanco */
     text-decoration: none;
-    font-size: 17px;
-    padding: 15px;
+    /* Elimina el subrayado */
 }
 
-.nav-links .separator {
-    color: #999;
-    font-size: 18px;
+.nav-links a:hover {
+    color: #efe936;
+    /* Cambia el color al pasar el mouse (opcional) */
+}
+
+.separator {
+    color: white;
 }
 
 .nav-logo-right {
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
+    height: 50px;
 }
+
 
 .navbar-bottom-bar {
     height: 5px;
     background: linear-gradient(to right, yellow 10%, blue 10% 20%, red 20% 30%);
 }
+
 
 body {
     margin: 0;
@@ -76,7 +93,7 @@ body {
             #ffffff 20px,
             #ffffff 40px);
     text-align: center;
-    padding: 80px 20px;
+    padding: 150px 20px;
 }
 
 .highlight-section h2 {
@@ -274,30 +291,39 @@ body {
 
 .whatsapp-btn {
     display: inline-flex;
-    align-items: center; /* Alinea verticalmente el texto y el ícono */
-    justify-content: center; /* Centra horizontalmente */
-    flex-direction: row; /* Cambia la dirección a fila */
+    align-items: center;
+    /* Alinea verticalmente el texto y el ícono */
+    justify-content: center;
+    /* Centra horizontalmente */
+    flex-direction: row;
+    /* Cambia la dirección a fila */
     position: relative;
-    top: 50px; /* Hace que suba sobre el footer */
-    background-color: #25D366; /* Verde de WhatsApp */
+    top: 50px;
+    /* Hace que suba sobre el footer */
+    background-color: #25D366;
+    /* Verde de WhatsApp */
     left: 50%;
     transform: translateX(-50%);
     color: black;
     font-weight: bold;
     font-size: 20px;
-    padding: 15px 30px; /* Ajusta el espaciado interno */
+    padding: 15px 30px;
+    /* Ajusta el espaciado interno */
     border-radius: 999px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     text-align: center;
     max-width: 350px;
-    gap: 10px; /* Espacio entre el texto y el ícono */
+    gap: 10px;
+    /* Espacio entre el texto y el ícono */
 }
 
 .whatsapp-btn i {
-    font-size: 25px; /* Tamaño del ícono */
-    color: white; /* Color del ícono */
-    padding : 5px;
+    font-size: 25px;
+    /* Tamaño del ícono */
+    color: white;
+    /* Color del ícono */
+    padding: 5px;
 }
 
 .footer {
@@ -307,24 +333,34 @@ body {
 }
 
 .footer-container {
-    display: flex; /* Activa el diseño en fila */
-    justify-content: space-between; /* Espacio uniforme entre los elementos */
-    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    display: flex;
+    /* Activa el diseño en fila */
+    justify-content: space-between;
+    /* Espacio uniforme entre los elementos */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en pantallas pequeñas */
     padding: 20px;
-    background-color: #111; /* Fondo oscuro */
-    color: white; /* Texto blanco */
+    background-color: #111;
+    /* Fondo oscuro */
+    color: white;
+    /* Texto blanco */
 }
 
 .footer-logo,
 .footer-branch {
-    flex: 1; /* Cada elemento ocupa el mismo espacio */
-    max-width: 300px; /* Ancho máximo para cada columna */
-    margin: 10px; /* Espaciado entre columnas */
+    flex: 1;
+    /* Cada elemento ocupa el mismo espacio */
+    max-width: 300px;
+    /* Ancho máximo para cada columna */
+    margin: 10px;
+    /* Espaciado entre columnas */
 }
 
 .footer-logo img {
-    max-width: 100%; /* Asegura que el logo no exceda el contenedor */
+    max-width: 160px;
+    /* Asegura que el logo no exceda el contenedor */
     margin-bottom: 10px;
 }
 
@@ -342,12 +378,177 @@ body {
 }
 
 .social-icons a {
-    color: white; /* Color blanco para los íconos */
+    color: white;
+    /* Color blanco para los íconos */
     margin-right: 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #efe936; /* Cambia a amarillo al pasar el mouse */
+    color: #efe936;
+    /* Cambia a amarillo al pasar el mouse */
+}
+
+@media (max-width: 480px) {
+    /* Celulares estándar y pequeños */
+    .highlight-section {
+        padding: 25px 13px;
+        /* Reduce padding */
+    }
+
+
+    .highlight-line-1,
+    .highlight-line-2 {
+        font-size: 4px;
+        padding: 5px;
+    }
+
+    .highlight-section p {
+        font-size: 2px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .stats-section {
+        padding: 20px 10px;
+        /* Reduce el padding para pantallas pequeñas */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .stats-container {
+        flex-direction: column;
+        /* Apila los elementos verticalmente */
+        gap: 6px;
+        /* Ajusta el espacio entre los elementos */
+    }
+
+    .stat-item strong {
+        font-size: 16px;
+        /* Reduce el tamaño del texto */
+    }
+
+    .stat-item span {
+        font-size: 14px;
+        /* Reduce el tamaño del texto */
+    }
+
+    .stat-separator {
+        display: none;
+        /* Oculta el separador en pantallas pequeñas */
+    }
+
+    .carousel-inner img {
+        height: auto;
+        /* Ajusta la altura automáticamente */
+        width: 100%;
+        /* Asegura que las imágenes ocupen todo el ancho */
+        object-fit: cover;
+        /* Mantiene el contenido ajustado */
+    }
+
+    
+
+    .carousel-item {
+        display: flex;
+        /* Centra las imágenes */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .branches-section {
+        padding: 20px 10px;
+        /* Reduce el padding para pantallas pequeñas */
+    }
+
+    .branches-title {
+        font-size: 18px;
+        /* Reduce el tamaño del título */
+    }
+
+    .branch-item h3 {
+        font-size: 16px;
+        /* Reduce el tamaño del texto del título de cada sucursal */
+    }
+
+    .branch-item p {
+        font-size: 14px;
+        /* Reduce el tamaño del texto de las descripciones */
+    }
+
+    .branch-item svg {
+        width: 30px;
+        /* Reduce el tamaño del ícono */
+        height: 30px;
+        /* Ajusta la altura del ícono */
+    }
+}
+
+
+/* Estilo responsive ipad*/
+@media (max-width: 768px) {
+    .highlight-section {
+        padding: 60px 20px;
+        /* Reduce padding */
+    }
+
+    .carousel-inner img {
+        height: auto;
+        /* Ajusta la altura automáticamente */
+        width: 100%;
+        /* Asegura que las imágenes ocupen todo el ancho */
+        object-fit: cover;
+        /* Mantiene el contenido ajustado */
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #111;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .highlight-section p {
+        max-width: 700px;
+        margin: 10px auto 0;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .highlight-section .highlight-line-1 {
+        font-size: 20px;
+    }
+
+    .highlight-section .highlight-line-2 {
+        font-size: 20px;
+    }
+
+
+    .separator {
+        display: none;
+    }
 }
