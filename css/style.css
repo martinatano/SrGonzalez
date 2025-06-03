@@ -392,26 +392,42 @@ body {
 
 @media (max-width: 480px) {
     /* Celulares estándar y pequeños */
-    .highlight-section {
-        padding: 25px 13px;
-        /* Reduce padding */
+
+    .logo{
+        height: 30px;
+    }
+    .carousel-inner img {
+        height: 100%; /* Aumenta la altura del carrusel */
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+        object-fit: cover; /* Mantiene el contenido ajustado */
     }
 
+
+    .highlight-section {
+        padding: 20px 10px !important; /* Reduce el padding para que sea más compacto */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .highlight-section h2 {
+        font-size: 16px !important; /* Reduce el tamaño del título */
+        line-height: 1.2; /* Ajusta el espaciado entre líneas */
+    }
 
     .highlight-line-1,
     .highlight-line-2 {
-        font-size: 4px;
-        padding: 5px;
+        font-size: 14px !important; /* Reduce el tamaño del texto destacado */
+        padding: 5px !important; /* Ajusta el padding interno */
     }
 
     .highlight-section p {
-        font-size: 2px;
-        line-height: 1.4;
-        padding: 0 10px;
+        font-size: 10px !important; /* Reduce el tamaño del texto del párrafo */
+        line-height: 1.4; /* Mejora la legibilidad */
+        margin: 10px 0; /* Ajusta el margen */
     }
 
+    
     .stats-section {
-        padding: 20px 10px;
+        padding: 10px 10px;
         /* Reduce el padding para pantallas pequeñas */
         text-align: center;
         /* Centra el texto */
@@ -420,7 +436,7 @@ body {
     .stats-container {
         flex-direction: column;
         /* Apila los elementos verticalmente */
-        gap: 6px;
+        gap: 2px;
         /* Ajusta el espacio entre los elementos */
     }
 
@@ -430,7 +446,7 @@ body {
     }
 
     .stat-item span {
-        font-size: 14px;
+        font-size: 12px;
         /* Reduce el tamaño del texto */
     }
 
@@ -440,7 +456,7 @@ body {
     }
 
     .carousel-inner img {
-        height: auto;
+        height: 400px;
         /* Ajusta la altura automáticamente */
         width: 100%;
         /* Asegura que las imágenes ocupen todo el ancho */
@@ -458,22 +474,22 @@ body {
     }
 
     .branches-section {
-        padding: 20px 10px;
+        padding: 20px 10px ;
         /* Reduce el padding para pantallas pequeñas */
     }
 
     .branches-title {
-        font-size: 18px;
+        font-size: 16px;
         /* Reduce el tamaño del título */
     }
 
     .branch-item h3 {
-        font-size: 16px;
+        font-size: 14px;
         /* Reduce el tamaño del texto del título de cada sucursal */
     }
 
     .branch-item p {
-        font-size: 14px;
+        font-size: 12px;
         /* Reduce el tamaño del texto de las descripciones */
     }
 
@@ -482,6 +498,11 @@ body {
         /* Reduce el tamaño del ícono */
         height: 30px;
         /* Ajusta la altura del ícono */
+    }
+
+    .carrousel-row {
+        padding: 3px !important;
+        /* Reduce el padding para pantallas pequeñas */
     }
 }
 
