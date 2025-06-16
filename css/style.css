@@ -18,6 +18,20 @@ body {
     background-color: #111;
 }
 
+.nav-mobile-petone {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.conoce {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: GothamBook;
+    margin-right: 4px;
+}
+
 /* Navbar general */
 .navbar-wrapper {
     width: 100vw;
@@ -393,39 +407,52 @@ body {
 @media (max-width: 480px) {
     /* Celulares estándar y pequeños */
 
-    .logo{
+    .logo {
         height: 30px;
     }
+
     .carousel-inner img {
-        height: 100%; /* Aumenta la altura del carrusel */
-        width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
-        object-fit: cover; /* Mantiene el contenido ajustado */
+        height:100% !important;
+        /* Aumenta la altura del carrusel */
+        max-width: 100%;
+        /* Asegura que las imágenes ocupen todo el ancho */
+        object-fit: cover !important;
+        /* Mantiene el contenido ajustado */
     }
 
 
     .highlight-section {
-        padding: 20px 10px !important; /* Reduce el padding para que sea más compacto */
-        text-align: center; /* Centra el contenido */
+        padding: 40px 10px !important;
+        /* Reduce el padding para que sea más compacto */
+        text-align: center;
+        /* Centra el contenido */
     }
 
     .highlight-section h2 {
-        font-size: 16px !important; /* Reduce el tamaño del título */
-        line-height: 1.2; /* Ajusta el espaciado entre líneas */
+        font-size: 35px !important;
+        /* Reduce el tamaño del título */
+        line-height: 0.7;
+        /* Ajusta el espaciado entre líneas */
     }
 
     .highlight-line-1,
     .highlight-line-2 {
-        font-size: 14px !important; /* Reduce el tamaño del texto destacado */
-        padding: 5px !important; /* Ajusta el padding interno */
+        font-size: 22px !important;
+        /* Reduce el tamaño del texto destacado */
+        padding: 5px !important;
+        /* Ajusta el padding interno */
     }
 
     .highlight-section p {
-        font-size: 10px !important; /* Reduce el tamaño del texto del párrafo */
-        line-height: 1.4; /* Mejora la legibilidad */
-        margin: 10px 0; /* Ajusta el margen */
+        font-size: 13px !important;
+        /* Reduce el tamaño del texto del párrafo */
+        line-height: 1.4;
+        /* Mejora la legibilidad */
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
 
-    
+
     .stats-section {
         padding: 10px 10px;
         /* Reduce el padding para pantallas pequeñas */
@@ -436,23 +463,36 @@ body {
     .stats-container {
         flex-direction: column;
         /* Apila los elementos verticalmente */
+        align-items: center;
         gap: 2px;
         /* Ajusta el espacio entre los elementos */
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .stat-item strong {
-        font-size: 16px;
+        font-size: 20px;
         /* Reduce el tamaño del texto */
+        margin-bottom: 0px;
     }
 
     .stat-item span {
-        font-size: 12px;
+        font-size: 20px;
         /* Reduce el tamaño del texto */
     }
 
     .stat-separator {
-        display: none;
-        /* Oculta el separador en pantallas pequeñas */
+        display: block;
+        width: 180px !important;
+        height: 0;
+        border-top: 2px solid #666;
+        margin: 8px auto;
+        font-size: 0;
+        /* Oculta el carácter | */
+        background: none;
+        line-height: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .carousel-inner img {
@@ -464,8 +504,6 @@ body {
         /* Mantiene el contenido ajustado */
     }
 
-    
-
     .carousel-item {
         display: flex;
         /* Centra las imágenes */
@@ -474,29 +512,31 @@ body {
     }
 
     .branches-section {
-        padding: 20px 10px ;
+        padding: 20px 10px;
         /* Reduce el padding para pantallas pequeñas */
     }
 
     .branches-title {
-        font-size: 16px;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 40px;
         /* Reduce el tamaño del título */
     }
 
     .branch-item h3 {
-        font-size: 14px;
+        font-size: 18px;
         /* Reduce el tamaño del texto del título de cada sucursal */
     }
 
     .branch-item p {
-        font-size: 12px;
+        font-size: 16px;
         /* Reduce el tamaño del texto de las descripciones */
     }
 
     .branch-item svg {
-        width: 30px;
+        width: 80px;
         /* Reduce el tamaño del ícono */
-        height: 30px;
+        height: 80px;
         /* Ajusta la altura del ícono */
     }
 
@@ -509,6 +549,16 @@ body {
 
 /* Estilo responsive ipad*/
 @media (max-width: 768px) {
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .nav-mobile-petone {
+        display: flex !important;
+        padding:10px;
+    }
+
     .highlight-section {
         padding: 60px 20px;
         /* Reduce padding */
@@ -522,6 +572,7 @@ body {
         object-fit: cover;
         /* Mantiene el contenido ajustado */
     }
+
     .menu-toggle {
         display: block;
     }
